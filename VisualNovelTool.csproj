@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Resources\favicon.ico</ApplicationIcon>
+    <Win32Resource />
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\camera-icon.png" />
+    <None Remove="Resources\favicon.ico" />
+    <None Remove="Resources\setting-icon.png" />
+    <None Remove="Resources\video-icon.png" />
+    <None Remove="Resources\voice-icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\camera-icon.png" />
+    <Resource Include="Resources\favicon.ico" />
+    <Resource Include="Resources\setting-icon.png" />
+    <Resource Include="Resources\video-icon.png" />
+    <Resource Include="Resources\voice-icon.png" />
+  </ItemGroup>
+
+</Project>
